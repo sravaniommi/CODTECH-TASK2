@@ -1,0 +1,44 @@
+// Threr are three lamps, RED,GREEN AND YELLOW, that should glow cyclically with a fixed time interval(say, 1 second)
+// FSM(finite state machine)
+module cyclic_lamp(clock, light);
+  input clock;
+  output reg[0:2] light;
+  parameter s0=0, s1=1, s2=2;
+  parameter RED=3'b011, GREEN=3'b010, YELLOW= 3'b001;
+  reg[0:1] state;
+  always @(posedge clock)
+    case(state)
+      s0: begin
+             light<=GREEN;     state<=s1;
+          end
+      s1: begin
+             light<=YELLOW;     state<=s2;
+          end
+      s0: begin
+             light<=RED;     state<=s0;
+          end
+      default: begin
+                  light<=RED;
+                   state<=s0;
+               end 
+    endcase
+endmodule
+
+//testBench code
+module test_cyclic_lamp;
+  reg clock;
+  wire [0:2] light;
+  cyclic_lamp LAMP(clock, light);
+  always #5 clock = ~clock;
+  initial
+    begin
+      clock = 1'b0;
+      #100 $finish;
+    end
+  initial
+    begin
+      $dumpfile("dump.vcd");
+      $dumpvars(0,test_cyclic_lamp);
+      $monitor ($time, "RGY:%b", light);
+    end
+endmodule
