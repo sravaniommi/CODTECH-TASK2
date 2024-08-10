@@ -1,4 +1,4 @@
-# CODTECH_Task2
+# CODTECH-Task2
 
 Name: Ommi Sravani
 
@@ -14,29 +14,7 @@ Mentor:Muzammil Ahmed.
 
 **Overview of the project**
 
-Project:Digital Logic Design With Verilog.
-
-TOOL USED:EDA Playground.
-
-Objective:The objective of this task is to # CODTECH-Task1
-
-Name: Nandigana Jyothi
-
-Company:CODTECH IT SOLUTIONS.
-
-ID:CT6VLSI659
-
-Domain:VLSI
-
-Duration:July to August 2024.
-
-Mentor:Muzammil Ahmed.
-
-**Overview of the project**
-
-Project:Digital Logic Design With Verilog.
-
-TOOL USED:EDA Playground.
+Project:FINITE STATE MACHINE (FSM) DESIGN.
 
 Objective:The objective of this task is to Design FSMs using Verilog or VHDL in the VLSI software environment. Write testbenches to test different states and transitions of the FSM. Simulate the FSM behavior and verify its correctness.
 
