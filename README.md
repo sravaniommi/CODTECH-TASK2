@@ -56,7 +56,6 @@ There are two types of FSMs:
 
 ![fsm_waveform](https://github.com/user-attachments/assets/477a0952-3dac-47ba-8b59-29789acbf6b6)
 
-
 Verilog module defines a finite state machine(FSM) that is cyclic lamp where the state changes from RED --> GREEN --> YELLOW --> RED
 
 In state s0, the GREEN lamp is ON, and the FSM transitions to s1.
