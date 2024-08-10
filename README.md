@@ -54,8 +54,6 @@ There are two types of FSMs:
 
 2.Mealy state machine: A Finite state machine is said to be Melay state machine, if outputs depend on both present inputs and present states.
 
-![fsm_waveform](https://github.com/user-attachments/assets/477a0952-3dac-47ba-8b59-29789acbf6b6)
-
 Verilog module defines a finite state machine(FSM) that is cyclic lamp where the state changes from RED --> GREEN --> YELLOW --> RED
 
 In state s0, the GREEN lamp is ON, and the FSM transitions to s1.
@@ -63,5 +61,9 @@ In state s0, the GREEN lamp is ON, and the FSM transitions to s1.
 In state s1, the YELLOW lamp is ON, and the FSM transitions to s2.
 
 In state s2, the RED lamp is ON, and the FSM transitions back to s0.
+
+
+![fsm_waveform](https://github.com/user-attachments/assets/477a0952-3dac-47ba-8b59-29789acbf6b6)
+
 
 
