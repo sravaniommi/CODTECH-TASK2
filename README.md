@@ -16,6 +16,8 @@ Mentor:Muzammil Ahmed.
 
 Project:FINITE STATE MACHINE (FSM) DESIGN.
 
+TOOL USED:EDA Playground.
+
 Objective:The objective of this task is to Design FSMs using Verilog or VHDL in the VLSI software environment. Write testbenches to test different states and transitions of the FSM. Simulate the FSM behavior and verify its correctness.
 
 /* fsm */
